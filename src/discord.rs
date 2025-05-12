@@ -9,7 +9,7 @@ struct DiscordMessage {
     content: String,
 }
 
-pub async fn send_discord_message(config: &Config, content: &str) {
+pub async fn send_discord_message(config: &Config, content: String) {
     let client = Client::new();
 
     let message = DiscordMessage {
