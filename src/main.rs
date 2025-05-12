@@ -10,7 +10,7 @@ use std::collections::HashMap;
 
 #[tokio::main]
 async fn main() {
-    let cfg = config::load();
+    let cfg = config::Config::load();
 
     // Store previous beers and their URLs
     let mut previous_beers: Vec<String> = Vec::new();
