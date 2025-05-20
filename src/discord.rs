@@ -1,4 +1,3 @@
-
 use crate::config::Config;
 use reqwest::Client;
 use serde::Serialize;
